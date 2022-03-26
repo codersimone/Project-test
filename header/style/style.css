@@ -1,0 +1,112 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+li {
+    display: block;
+}
+
+.header {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.75em;
+}
+
+.header__menu {
+    flex: 1 1 auto;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu__list {
+    display: flex;
+    font-weight: 400;
+    font-size: 0.75em;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+/* menu items */
+
+.menu__link_main {
+    margin-right: 76px;
+    text-decoration: none;
+    color: #333;
+    border-bottom: 1px solid #333;
+    border-top: 1px solid #333;
+    padding: 3.89px 16px 3.89px 14px;
+}
+
+.menu__link_gallery {
+    margin-right: 61px;
+    text-decoration: none;
+    color: #333;
+}
+
+.menu__link_projects {
+    margin-right: 55px;
+    text-decoration: none;
+    color: #333;
+}
+
+.menu__link_certification {
+    margin-right: 49px;
+    text-decoration: none;
+    color: #333;
+}
+
+.menu__link_contacts {
+    margin-right: 134px;
+    text-decoration: none;
+    color: #333;
+}
+
+/* adaptation */
+
+@media screen and (min-width:1280px) {
+    .header__container {
+        display: flex;
+        max-width: 1170px;
+        min-height: 102px;
+        margin: 0 auto;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1279px) {
+    .header__container {
+        display: flex;
+        max-width: 100%;
+        min-height: 102px;
+        padding: 15px;
+        margin: 0 auto;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:768px) {
+    .header__container {
+        flex-direction: column;
+        padding-top: 15px;
+        flex-wrap: wrap;
+
+
+
+
+        align-items: center;
+    }
+
+    .header__container_logo {
+        align-self: center;
+    }
+}
+
+@media screen and (max-width:480px) {
+    лого вверху,
+    а гамбургер уходит вниз
+}
